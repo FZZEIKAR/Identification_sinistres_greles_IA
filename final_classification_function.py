@@ -1,3 +1,5 @@
+#fonction permettant de construire la table finale à télécharger après l'intervention de l'utilisateur
+#fonction qui classifie les sinistres en deux classes
 def table_finale(df,df_verifier,df_grele):
   a=df_verifier.empty
   b=df_grele.empty
@@ -20,5 +22,4 @@ def table_finale(df,df_verifier,df_grele):
       for j in range (0, len(df_verifier)):
         if df.loc[k,'ID_ADS']==df_verifier.loc[j, 'ID_ADS']:
           df.loc[k, 'Class']='non grele'
-
   return(df)
