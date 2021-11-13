@@ -1,4 +1,4 @@
-#fonction de la solution hybride
+#fonction de la solution hybride qui classifie les sinistres en trois classes
 def classifier(df):
   df_Recherche_V = Recherche_V(df)
   df_lstm = predict_lstm(df)
