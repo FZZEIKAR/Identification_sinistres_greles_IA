@@ -1,5 +1,9 @@
+#Libraries
+import openpyxl
+import pandas as pd
 #fonction de la solution hybride qui classifie les sinistres en trois classes
-def classifier(df):
+def classifier(file):
+  df=pd.read_excel(file ,engine='openpyxl')
   df_Recherche_V = Recherche_V(df)
   df_lstm = predict_lstm(df)
   for i in range (len(df)):
