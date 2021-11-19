@@ -254,7 +254,7 @@ server <- function(input, output, session) {
         waitress$inc(10) # increase by 10%
         Sys.sleep(.3)
       }
-      data_class<-new_claims_class(my_file()$datapath)
+      data_class<-classifier(my_file()$datapath)
       waitress$close()
       return(data_class)
       
