@@ -14,7 +14,6 @@ source_python("lstm_predictions_function.py")
 source_python("Recherche_V_function.py")
 source_python("initial_classification_function.py")
 source_python("final_classification_function.py")
-source_python("classes_new_claims_function.py")
 
 ui<-tagList(
   tags$head(
@@ -209,7 +208,7 @@ ui<-tagList(
         ),
         
         tags$br(),
-        tags$strong("Fatima-Zahra Zeikar"),
+        tags$strong("Fatima-Zahra ZEIKAR"),
         tags$em(tags$strong("Consultante data scientist")),
         tags$a(href="https://www.linkedin.com/in/fatima-zahra-zeikar-7a03b9153/", icon("linkedin"),target="_blank"),
         tags$strong(p(icon("address-card"), " fatima.zahra@gradiant.fr")),
